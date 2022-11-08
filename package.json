@@ -1,8 +1,9 @@
 {
   "name": "fastapi_docs_helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A firefox extention which helps you read fastapi.tiangolo.com a bit easier by setting a fixed max-height on the top banner",
   "scripts": {
+    "build": "web-ext build"
   },
   "repository": {
     "type": "git",
