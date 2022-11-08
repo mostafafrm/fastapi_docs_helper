@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sepsh/fastapi_docs_helper/issues"
   },
-  "homepage": "https://github.com/sepsh/fastapi_docs_helper#readme"
+  "homepage": "https://github.com/sepsh/fastapi_docs_helper#readme",
+  "devDependencies": {
+    "web-ext": "^7.3.1"
+  }
 }
