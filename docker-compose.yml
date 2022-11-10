@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  web-ext:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+
+    working_dir: /app
+
+    volumes:
+      - ./src:/app/src:ro
+      - ./build:/app/build:rw
+
+    environment:
+      # Environment variables set here have higher
+      # priority over settings in "web-ext-config.js"
+      # for more details see: https://extensionworkshop.com/documentation/develop/web-ext-command-reference/
+      - WEB_EXT_AS_NEEDED=true
+    env_file:
+      # Defaults for web-ext
+      - web-ext.env
+
+    command: "npm run build"
