@@ -1,3 +1,17 @@
+/*
+  All this script does is to prevent the top announcement banner
+  from shrinking, so the reader doesn't gets annoyed
+  by all the text down the page jumping up and down.
+
+  The banner can grow as it wants, but we set the
+  highest hight it ever had and set it to min-hight
+  on that DOM-element inline css style.
+
+  If the browser window ever gets resized, we reset the min-height
+  to 0.
+*/
+
+// Get the banner. this might changed and brake the script
 const banner = document.querySelector(
   "div[data-md-component=announce] aside.md-banner"
 );
