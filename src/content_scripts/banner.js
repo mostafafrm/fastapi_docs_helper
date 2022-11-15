@@ -45,5 +45,6 @@ observer.observe(announce_wrapper, config);
 */
 const handleWindowResize = () => {
   banner.style.minHeight = 0;
+  handleStyleChange(); // Set the initial height after reset.
 };
 window.addEventListener("resize", handleWindowResize);
