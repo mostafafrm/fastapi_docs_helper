@@ -11,7 +11,9 @@
   to 0.
 */
 
-// Get the banner. this might changed and brake the script
+/*
+  Get the banner. this might changed and brake the script
+*/
 const banner = document.querySelector(
   "div[data-md-component=announce] aside.md-banner"
 );
@@ -20,11 +22,16 @@ const banner = document.querySelector(
   Set the minHeight to the highest height
   the banner ever had, as the items change
 */
-const handleStyleChange = () => {
+const adjustBanner = () => {
   const height = banner.offsetHeight;
   const minHeight = parseInt(banner.style.minHeight) || 0;
   if (height > minHeight) banner.style.minHeight = `${height}px`;
 };
+
+/*
+  Call adjustBanner when page (this script) loads.
+*/
+adjustBanner();
 
 /*
   Watch for style changes in items inside the banner
@@ -35,7 +42,7 @@ const handleStyleChange = () => {
 const announce_wrapper = banner
   .querySelector("div.md-banner__inner.md-grid.md-typeset")
   .querySelector("div.announce-wrapper");
-const observer = new MutationObserver(handleStyleChange);
+const observer = new MutationObserver(adjustBanner);
 const config = { subtree: true, attributes: true, attributeFilter: ["style"] };
 observer.observe(announce_wrapper, config);
 
@@ -45,6 +52,6 @@ observer.observe(announce_wrapper, config);
 */
 const handleWindowResize = () => {
   banner.style.minHeight = 0;
-  handleStyleChange(); // Set the initial height after reset.
+  adjustBanner(); // Set the initial height after reset.
 };
 window.addEventListener("resize", handleWindowResize);
