@@ -27,6 +27,11 @@ const adjustBanner = () => {
 };
 
 /*
+  Call adjustBanner when page (this script) loads.
+*/
+adjustBanner();
+
+/*
   Watch for style changes in items inside the banner
   see:
   https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
