@@ -12,7 +12,7 @@
 */
 
 /*
-  Get the banner. this might changed and brake the script
+  Get the banner. this might get changed and brake the script
 */
 const banner = document.querySelector(
   "div[data-md-component=announce] aside.md-banner"
