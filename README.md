@@ -31,6 +31,8 @@ A firefox extention which helps you read [FastApi docs](https://fastapi.tiangolo
      npm run build
      ```
 
+     Your extension should be ready under `build/` directory.
+
   2. Using `docker-compose`
 
      Make sure you have [docker and docker-compose](https://docs.docker.com/get-docker/) set-up and running.
@@ -47,4 +49,4 @@ A firefox extention which helps you read [FastApi docs](https://fastapi.tiangolo
      docker-compose down --rmi local
      ```
 
-- Your extension should be ready under `build` directory.
+     Your extension should be ready under `build/` directory.
