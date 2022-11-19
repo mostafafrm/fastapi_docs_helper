@@ -10,5 +10,11 @@
             "matches": ["*://fastapi.tiangolo.com/*"],
             "js": ["content_scripts/banner.js"]
         }
-    ]
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "sepsh.fastapi_docs_helper@github.com"
+        }
+      }
 }
