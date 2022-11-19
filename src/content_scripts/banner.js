@@ -1,5 +1,5 @@
 /*
-  All this script does is to prevent the top announcement banner
+  All this script does is prevent the top announcement banner
   from shrinking, so the reader doesn't gets annoyed
   by all the text down the page jumping up and down.
 
