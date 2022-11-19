@@ -3,9 +3,9 @@
   from shrinking, so the reader doesn't gets annoyed
   by all the text down the page jumping up and down.
 
-  The banner can grow as it wants, but we set the
+  The banner can grow as it wants, but we keep the
   highest hight it ever had and set it to min-hight
-  on that DOM-element inline css style.
+  on banner's inline css style.
 
   If the browser window ever gets resized, we reset the min-height
   to 0.
@@ -35,7 +35,7 @@ adjustBanner();
 
 /*
   Watch for style changes in items inside the banner
-  see:
+  for details on MutationObserver see here:
   https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
   https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe
 */
