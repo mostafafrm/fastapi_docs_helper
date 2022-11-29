@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sepsh.fastapi_docs_helper@github.com"
+    }
+  }
+}
