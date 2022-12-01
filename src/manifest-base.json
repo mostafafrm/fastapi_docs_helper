@@ -1,9 +1,4 @@
 {
-  "name": "fastapi_docs_helper",
-  "version": "0.2.4",
-
-  "description": "A browser extension which helps you read fastapi.tiangolo.com a bit easier by setting a fixed max-height on the top banner",
-
   "content_scripts": [
     {
       "matches": ["*://fastapi.tiangolo.com/*"],
