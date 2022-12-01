@@ -101,11 +101,11 @@ function copySourceFiles(src_dir, dest_dir, manifest) {
 function makeExtension(type, iconSizes) {
   const temp_dir = createTempDir(type);
 
-  const icons = makeIcons(ORIGINAL_ICON, temp_dir, iconSizes);
   let manifest = getManifest(SOURCE_DIRECTORY, type, "base");
-  manifest = { ...manifest, icons };
-
   copySourceFiles(SOURCE_DIRECTORY, temp_dir, manifest);
+
+  const icons = makeIcons(ORIGINAL_ICON, temp_dir, iconSizes);
+  manifest = { ...manifest, icons };
 
   const manifest_file = path.join(temp_dir, "manifest.json");
   const filename = `${packageDotJson.name}-${packageDotJson.version}-${type}.zip`;
