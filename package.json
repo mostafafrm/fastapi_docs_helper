@@ -1,9 +1,9 @@
 {
   "name": "fastapi_docs_helper",
-  "version": "0.2.3",
-  "description": "A firefox extension which helps you read fastapi.tiangolo.com a bit easier by setting a fixed max-height on the top banner",
+  "version": "0.3.0",
+  "description": "A browser extension which helps you read fastapi.tiangolo.com a bit easier by setting a fixed max-height on the top banner",
   "scripts": {
-    "build": "web-ext build"
+    "build": "node build"
   },
   "repository": {
     "type": "git",
@@ -14,15 +14,17 @@
     "documentation",
     "tool",
     "firefox",
-    "web-extention"
+    "chromium",
+    "web-extension"
   ],
   "author": "Sepehr Shirkhanlou",
-  "license": "MPL-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sepsh/fastapi_docs_helper/issues"
   },
   "homepage": "https://github.com/sepsh/fastapi_docs_helper#readme",
   "devDependencies": {
+    "sharp": "^0.31.2",
     "web-ext": "^7.3.1"
   }
 }
