@@ -19,8 +19,8 @@ const banner = document.querySelector(
 );
 
 /*
-  Set the minHeight to the highest height
-  the banner ever had, as the items change
+  If current 'hight' is more than the
+  previous 'hight', set it as 'minHeight'
 */
 const adjustBanner = () => {
   const height = banner.offsetHeight;
@@ -29,7 +29,8 @@ const adjustBanner = () => {
 };
 
 /*
-  Call adjustBanner when page (this script) loads.
+  Call adjustBanner for the first time
+  ie. when page (this script) loads.
 */
 adjustBanner();
 
