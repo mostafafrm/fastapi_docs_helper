@@ -1,6 +1,6 @@
 # fastapi_docs_helper
 
-A firefox extension which helps you read [FastApi docs](https://fastapi.tiangolo.com) a bit easier.
+A Firefox/Chromium extension which helps you read [FastApi docs](https://fastapi.tiangolo.com) a bit easier.
 
 All this extension does is prevent the top announcement banner from shrinking, so the reader doesn't gets annoyed by all the text down the page jumping up and down.
 
